@@ -10,4 +10,7 @@
     <p> {{ song.author }} </p>
     <p> {{ song.albom }} </p>
     <img src="{% static 'img/album/' %}{{ song.author }} {{ song.albom }}.jpg" width="200px" height="200px">
+    <br>
+    <br>
+    <audio controls src="/static/music/{{ song.name }} - {{ song.author }}.mp3"></audio> 
 {% endblock %}
