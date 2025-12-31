@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<body>
+    <form action="" method="post">
+        {% csrf_token %}
+        <label for="username"> Username:  </label>
+        <input type="text" name="username"  placeholder="Username" class="username" required>
+        <br>
+        <label for="email"> Email:  </label>
+        <input type="email" name="email" placeholder="123456abc@gmail.com" class="" required>
+        <br>
+        <label for="password"> Password:  </label>
+        <input type="password" name="password" placeholder="Password" class="" required>
+        <br>
+        <label for="passwordConfirm"> Password confirm:  </label>
+        <input type="password" name="passwordConfirm" placeholder="Password confirm" class="" required>
+        <br>
+        <button> Send </button>
+        <p>{{error}}</p>
+    </form>
+</body>
+</html>
