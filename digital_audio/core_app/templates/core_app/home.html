@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block links %} 
+    <link rel="stylesheet" href="{% static 'core_app/css/home.css' %}">
+{% endblock %}
+
+{% block content %}
+    <h1>Hello</h1>
+    <div class="card-album">
+        <div class="cover"> 
+            <img src="{% static 'image/icon_disk/disk.svg' %}" alt="">
+        </div>
+        <div class="name-cover">
+            <h3> Hi </h3>
+        </div>
+    </div>
+
+    <div class="card-album">
+        <div class="cover"> 
+            <img src="{% static 'image/icon_disk/disk.svg' %}" alt="">
+        </div>
+        <div class="name-cover">
+            <h3> Hi </h3>
+        </div>
+    </div>
+
+    <div class="card-album">
+        <div class="cover"> 
+            <img src="{% static 'image/icon_disk/disk.svg' %}" alt="">
+        </div>
+        <div class="name-cover">
+            <h3> Hi </h3>
+        </div>
+    </div>
+
+    <div class="card-album">
+        <div class="cover"> 
+            <img src="{% static 'image/icon_disk/disk.svg' %}" alt="">
+        </div>
+        <div class="name-cover">
+            <h3> Hi </h3>
+        </div>
+    </div>
+{% endblock %}

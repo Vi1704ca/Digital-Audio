@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: auto;
+    font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    top: 5vh;
+    position: relative;
+    width: 75vw;
+    height: 12vh;
+    margin: 0 auto;
+    background-color: rgba(120, 80, 183, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+    border-radius: 1vw;
+}
+
+header a {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0 8vw;
+    width:  6vh;
+    height: 6vh;
+}
+
+.home-link {
+    background-image: url('/static/image/icon/FrameHome.svg');
+}
+
+.playlist-link {
+    background-image: url('/static/image/icon/FrameNote.svg');
+}
+
+.settings-link {
+    background-image: url('/static/image/icon/FrameSettings.svg');
+}
+
+.personalA-link {
+    background-image: url('/static/image/icon/FrameProfile.svg');
+}
+
+.home-link:hover {
+    background-image: none;
+    background-color: rgb(163, 130, 214);
+    mask: url('/static/image/icon/FrameHome.svg') no-repeat center;
+    mask-size: contain;
+}
+
+.playlist-link:hover {
+    background-image: none;
+    background-color: rgb(163, 130, 214);
+    mask: url('/static/image/icon/FrameNote.svg') no-repeat center;
+    mask-size: contain;
+}
+.settings-link:hover {
+    background-image: none;
+    background-color: rgb(163, 130, 214);
+    mask: url('/static/image/icon/FrameSettings.svg') no-repeat center;
+    mask-size: contain;
+}
+
+.personalA-link:hover {
+    background-image: none;
+    background-color: rgb(163, 130, 214);
+    mask: url('/static/image/icon/FrameProfile.svg') no-repeat center;
+    mask-size: contain;
+}
+
+h1, h3 {
+    color: aliceblue;
+}
+
+
+
+/*  
+background-color: #ff0000;
+mask: url('/static/image/icon/FrameProfile.svg') no-repeat center;
+mask-size: contain;
+*/

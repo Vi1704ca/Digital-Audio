@@ -1,10 +1,19 @@
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %} {% endblock %}</title>
+    <title> Digital Audio </title>
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    {% block links %} {% endblock %}
 </head>
 <body>
+    <header> 
+        <a href="{% url 'home' %}" class="home-link"></a>
+        <a href="{% url 'playlist' %}" class="playlist-link"></a>
+        <a href="{% url 'home' %}" class="settings-link"></a>
+        <a href="{% url 'personal-account' %}" class="personalA-link"></a>
+    </header>
     {% block content %}
 
     {% endblock %}

@@ -38,3 +38,6 @@ def render_login(request):
 
 def render_welcome(request):
     return render(request, 'user_app/welcome.html')
+
+def render_personal_account(request):
+    return render(request, 'user_app/personal_account.html')

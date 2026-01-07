@@ -1,0 +1,66 @@
+body {
+    background-image: url('/static/image/bg/home.jpg');
+    text-align: center;
+}
+
+.card-album {
+    display: inline-block;
+    vertical-align: top;
+    width: 30vh;
+    margin: 20vh 6vh;
+    box-sizing: border-box;
+}
+.cover {
+    position: relative;
+    height: 30vh;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1),
+        inset 0 0 20px rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 4vh;
+    cursor: pointer;
+}
+
+.cover img {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 15vh;
+    width: 12vw;
+    height: 12vw;
+    object-fit: contain;
+    filter: grayscale(1) brightness(1.1) contrast(1.05);
+    opacity: 70%;
+}
+
+.name-cover {
+    position: absolute;
+    width: 12vw;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(10px) saturate(180%);
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 
+        0 4px 24px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    padding: 2vh;
+    text-align: center;
+    cursor: text;
+}
+
+.name-cover h3 {
+    margin: 0;
+    color: white;
+    font-size: 4vh;
+    font-weight: 500;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
