@@ -16,7 +16,7 @@ a {
     text-decoration: none;
 }
 
-header {
+nav {
     top: 5vh;
     position: relative;
     width: 75vw;
@@ -26,6 +26,8 @@ header {
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     display: flex;
+    gap: 15vw;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     padding: 10px 0;
@@ -33,55 +35,28 @@ header {
     border-radius: 1vw;
 }
 
-header a {
+nav a {
     display: inline-block;
     background-repeat: no-repeat;
     background-size: 100%;
-    margin: 0 8vw;
-    width:  6vh;
+    margin: 0;
+    width: 6vh;
     height: 6vh;
 }
 
-.home-link {
-    background-image: url('/static/image/icon/FrameHome.svg');
+.home-link { --icon: url('/static/image/icon/FrameHome.svg'); }
+.playlist-link { --icon: url('/static/image/icon/FrameNote.svg'); }
+.settings-link { --icon: url('/static/image/icon/FrameSettings.svg'); }
+.personalA-link { --icon: url('/static/image/icon/FrameProfile.svg'); }
+
+nav a {
+    background-image: var(--icon);
 }
 
-.playlist-link {
-    background-image: url('/static/image/icon/FrameNote.svg');
-}
-
-.settings-link {
-    background-image: url('/static/image/icon/FrameSettings.svg');
-}
-
-.personalA-link {
-    background-image: url('/static/image/icon/FrameProfile.svg');
-}
-
-.home-link:hover {
+nav a:hover {
     background-image: none;
     background-color: rgb(163, 130, 214);
-    mask: url('/static/image/icon/FrameHome.svg') no-repeat center;
-    mask-size: contain;
-}
-
-.playlist-link:hover {
-    background-image: none;
-    background-color: rgb(163, 130, 214);
-    mask: url('/static/image/icon/FrameNote.svg') no-repeat center;
-    mask-size: contain;
-}
-.settings-link:hover {
-    background-image: none;
-    background-color: rgb(163, 130, 214);
-    mask: url('/static/image/icon/FrameSettings.svg') no-repeat center;
-    mask-size: contain;
-}
-
-.personalA-link:hover {
-    background-image: none;
-    background-color: rgb(163, 130, 214);
-    mask: url('/static/image/icon/FrameProfile.svg') no-repeat center;
+    mask: var(--icon) no-repeat center;
     mask-size: contain;
 }
 

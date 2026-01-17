@@ -9,10 +9,12 @@
 </head>
 <body>
     <header> 
-        <a href="{% url 'home' %}" class="home-link"></a>
-        <a href="{% url 'playlist' %}" class="playlist-link"></a>
-        <a href="{% url 'home' %}" class="settings-link"></a>
-        <a href="{% url 'personal-account' %}" class="personalA-link"></a>
+        <nav>
+            <a href="{% url 'home' %}" class="home-link"></a>
+            <a href="{% url 'playlist' %}" class="playlist-link"></a>
+            <a href="{% url 'home' %}" class="settings-link"></a>
+            <a href="{% url 'personal-account' %}" class="personalA-link"></a>
+        </nav>
     </header>
     {% block content %}
 
